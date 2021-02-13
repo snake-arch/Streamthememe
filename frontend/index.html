@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Xmeme</title>
+    <link rel="stylesheet" href='styles.css'/>
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Syncopate" />
+    <link rel = "icon" href =  
+"https://dazedimg-dazedgroup.netdna-ssl.com/495/azure/dazed-prod/1210/0/1210368.jpg" 
+        type = "image/x-icon">
+    
+  </head>
+  <script src="frontScr.js" defer ></script>
+
+  <body onload="fetchData()"> 
+
+    <div class="col-sm-4 col-2 fixed-top one" style="box-shadow: 10px 6px 20px rgba(100, 100, 100, 0.6);">
+      <div class="affix">
+       <hr />
+       <h1>Add your own meme</h1>
+       <hr />
+
+       <form id="please">
+        <div class="form-group">
+          <label for="author">Author's Name:</label>
+          <input class="form-control" name="author" id = "memename" required placeholder="What do you go by?"/>
+        </div>
+        <div class="form-group">
+          <label for="caption">Caption:</label>
+          <input class="form-control" name="caption" id="memecaption" required placeholder="Funny one liner"/>
+        </div>
+        <div class="form-group">
+          <label for="link">URL:</label>
+          <input class="form-control"  name="link" id="memeurl" required placeholder="URL to the meme"/>
+        </div>
+        <!--Other fields-->
+        <input type="submit" value="Add my meme" id="sub"/>
+       </form>
+      </div>
+    </div>
+
+    <div class="col-sm-8 offset-sm-6 two" id="stream">
+      <div class="page-header">
+        <h1 style="text-align: center;">Xmeme <small>A meme sharing platform</small></h1>
+      </div>
+      <hr />
+      <h2 >Meme stream</h2>
+      <hr />
+      <div class="row" id="add_after_me"></div>
+    </div>
+
+  </body>
+</html>
